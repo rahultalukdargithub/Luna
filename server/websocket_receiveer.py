@@ -6,7 +6,7 @@ save_directory = "path-of-your-save-directory"
 
 async def receive_files():
     # Replace 'your_sender_ip_here' with the sender machine's IP address
-    sender_ip = '192.168.60.16'
+    sender_ip = 'SENDER-IP'
     uri = f'ws://{sender_ip}:8789'
     async with websockets.connect(uri) as websocket:
         file_count = 1
