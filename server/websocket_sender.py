@@ -20,7 +20,7 @@ async def send_files(websocket, path):
                 sent_files.add(file)
         await asyncio.sleep(1)  # Check for new files every second
 # Replace 'localhost' with the sender machine's IP address
-sender_ip = '192.168.60.50'
+sender_ip = 'SENDER-IP'
 start_server = websockets.serve(send_files, sender_ip, 8787)
 
 asyncio.get_event_loop().run_until_complete(start_server)
